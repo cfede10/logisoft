@@ -1,0 +1,48 @@
+<?php
+
+if(!empty($this->fechacreacion))
+		{	
+			$operador="";
+			$fechacreacion = str_replace(' ','',$this->fechacreacion); 
+			if(substr($fechacreacion, 0, 1) == ">" || substr($fechacreacion, 0, 1) == "<")
+			{
+				$operador=substr($fechacreacion, 0, 1);
+				$fechacreacion=substr($this->fechacreacion, 1); 
+			}
+
+			$fechacreacionarray=explode("/", $fechacreacion); 
+            	if(isset($fechacreacionarray[0])&&
+                   isset($fechacreacionarray[1])&&
+                   isset($fechacreacionarray[2]))
+                   $fechacreacion=sprintf('%04d-%02d-%02d',$fechacreacionarray[2], $fechacreacionarray[1], $fechacreacionarray[0]);
+
+			$criteria->compare('fechacreacion', $operador.$fechacreacion, true); 
+    	
+    	}
+
+    	if(!empty($this->fechamodificacion))
+		{	
+			$operador="";
+			$fechamodificacion = str_replace(' ','',$this->fechamodificacion); 
+			if(substr($fechamodificacion, 0, 1) == ">" || substr($fechamodificacion, 0, 1) == "<")
+			{
+				$operador=substr($fechamodificacion, 0, 1);
+				$fechamodificacion=substr($this->fechamodificacion, 1); 
+			}
+
+			$fechamodificacionarray=explode("/", $fechamodificacion); 
+            	if(isset($fechamodificacionarray[0])&&
+                   isset($fechamodificacionarray[1])&&
+                   isset($fechamodificacionarray[2]))
+                   $fechamodificacion=sprintf('%04d-%02d-%02d',$fechamodificacionarray[2], $fechamodificacionarray[1], $fechamodificacionarray[0]);
+
+			$criteria->compare('fechamodificacion', $operador.$fechamodificacion, true); 
+    	
+    	}
+ VALIDACIONES
+>13/02/2015 		ok
+<14/02/2015			ok			
+13/02/2015			ok
+<   13/02/2015 		ok
+>   14/02/2015		ok
+   13/02/2015      	ok
