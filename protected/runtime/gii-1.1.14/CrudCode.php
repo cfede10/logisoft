@@ -1,5 +1,5 @@
 <?php
 return array (
-		'template' => 'classic',
-		'baseControllerClass' => 'Controller' 
+  'template' => 'classic',
+  'baseControllerClass' => 'Controller',
 );

@@ -23,8 +23,8 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 		requeridos.
 	</p>
 
-	<!-- RENGLON 1 -->
-	<table WIDTH="150%">
+	<table STYLE="table-layout: fixed; width=100%">
+		<!-- RENGLON 1 -->
 		<tr>
 			<td>
 				<div class="">
@@ -42,11 +42,8 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 				</div>
 			</td>
 		</tr>
-	</table>
-
-	<!-- RENGLON 2 -->
-	<table WIDTH="150%">
-		<tr>
+		<!-- RENGLON 2 -->
+				<tr>
 			<td>
 				<div class="">
 					<?php echo $form->labelEx($model,'domiciliolegal'); ?>
@@ -63,10 +60,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 				</div>
 			</td>
 		</tr>
-	</table>
-
-	<!-- RENGLON 3 -->
-	<table WIDTH="150%">
+		<!-- RENGLON 3 -->
 		<tr>
 			<td>
 				<div class="">
@@ -84,10 +78,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 				</div>
 			</td>
 		</tr>
-	</table>
-
-	<!-- RENGLON 4 -->
-	<table WIDTH="150%">
+		<!-- RENGLON 4 -->
 		<tr>
 			<td>
 				<div class="">
@@ -105,10 +96,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 				</div>
 			</td>
 		</tr>
-	</table>
-
-	<!-- RENGLON 5 -->
-	<table WIDTH="150%">
+		<!-- RENGLON 5 -->
 		<tr>
 			<td>
 				<div class="">
@@ -120,10 +108,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 
 			<td></td>
 		</tr>
-	</table>
-
-	<!-- RENGLON 6 -->
-	<table WIDTH="150%">
+		<!-- RENGLON 6 -->
 		<tr>
 			<td>
 				<div class="">
@@ -141,10 +126,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 				</div>
 			</td>
 		</tr>
-	</table>
-
-	<!-- RENGLON 7 -->
-	<table WIDTH="150%">
+		<!-- RENGLON 7 -->
 		<tr>
 			<td>
 				<div class="">
@@ -163,10 +145,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 
 			</td>
 		</tr>
-	</table>
-
-	<!-- RENGLON 8 -->
-	<table WIDTH="150%">
+		<!-- RENGLON 8 -->
 		<tr>
 			<td>
 				<div class="">
@@ -185,33 +164,6 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 			</td>
 		</tr>
 	</table>
-
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
 	
 	<?php
 	/*

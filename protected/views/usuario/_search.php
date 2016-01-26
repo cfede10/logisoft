@@ -6,13 +6,10 @@
 
 <div class="wide form">
 
-<?php
-
-$form = $this->beginWidget ( 'CActiveForm', array (
-		'action' => Yii::app ()->createUrl ( $this->route ),
-		'method' => 'get' 
-) );
-?>
+<?php $form=$this->beginWidget('CActiveForm', array(
+	'action'=>Yii::app()->createUrl($this->route),
+	'method'=>'get',
+)); ?>
 
 	<div class="">
 		<?php echo $form->label($model,'id'); ?>
@@ -26,28 +23,18 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 
 	<div class="">
 		<?php echo $form->label($model,'tipousuario_id'); ?>
-		<?php echo $form->dropDownList($model,'tipousuario_id',$model->getMenuTipodeusuarios(),array("empty"=>"Seleccione")); ?>
+		<?php echo $form->textField($model,'tipousuario_id'); ?>
+	</div>
+
+	<div class="">
+		<?php echo $form->label($model,'status'); ?>
+		<?php echo $form->textField($model,'status'); ?>
 	</div>
 
 	<div class="">
 		<?php echo $form->label($model,'fechacreacion'); ?>
-		<?php
-		$this->widget ( 'zii.widgets.jui.CJuiDatePicker', array (
-				'attribute' => 'fechacreacion',
-				'model' => $model,
-				'language' => 'es',
-				'options' => array (
-						'dateFormat' => 'dd/mm/yy',
-						'showButtonPanel' => true,
-						'changeYear' => 'true',
-						'yearRange' => '-80',
-						'minDate' => '-80Y',
-						'maxDate' => '-10Y' 
-				) 
-		) );
-		?>
-	<?php echo $form->error($model,'fechacreacion'); ?>
- 	</div>
+		<?php echo $form->textField($model,'fechacreacion'); ?>
+	</div>
 
 	<div class="">
 		<?php echo $form->label($model,'fechamodificacion'); ?>

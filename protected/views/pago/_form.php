@@ -22,7 +22,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 		Los campos marcados con <span class="required">*</span> son
 		requeridos.
 	</p>
-	<table WIDTH="100%" STYLE="table-layout: fixed">
+	<table STYLE="table-layout: fixed; width=100%">
 		<tr>
 			<td>
 				<div class="">
@@ -32,7 +32,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 				</div>
 			</td>
 		</tr>
-		<table>
+	</table>
 		
 	<?php
 	/*
@@ -65,7 +65,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Actualizar',array('class'=>'btn btn-primary btn-large')); ?>
 	</div>
 
-<?php $this->endWidget(); ?>
+	<?php $this->endWidget(); ?>
 
 </div>
 			<!-- form -->

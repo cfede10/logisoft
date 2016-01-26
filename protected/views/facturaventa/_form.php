@@ -24,7 +24,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 	</p>
 
 
-	<table WIDTH="100%" STYLE="table-layout: fixed">
+	<table STYLE="table-layout: fixed; width=100%">
 		<!-- RENGLON 1 -->
 		<tr>
 			<td>

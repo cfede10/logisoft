@@ -45,4 +45,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</section>
 			<!-- /.span4 -->

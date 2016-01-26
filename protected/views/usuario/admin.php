@@ -1,35 +1,18 @@
 <?php
 /* @var $this UsuarioController */
 /* @var $model Usuario */
-$this->breadcrumbs = array (
-		'Usuarios' => array (
-				'index' 
-		),
-		'Administrar' 
+
+$this->breadcrumbs=array(
+	'Usuarios'=>array('index'),
+	'Administrar',
 );
 
-$this->menu = array (
-		array (
-				'label' => 'Listar',
-				'url' => array (
-						'index' 
-				) 
-		),
-		array (
-				'label' => 'Crear',
-				'url' => array (
-						'create' 
-				) 
-		),
-		array (
-				'label' => 'MENU',
-				'url' => array (
-						'Menup/index' 
-				) 
-		) 
+$this->menu=array(
+	array('label'=>'Listar', 'url'=>array('index')),
+	array('label'=>'Crear', 'url'=>array('create')),
 );
 
-Yii::app ()->clientScript->registerScript ( 'search', "
+Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
 	$('.search-form').toggle();
 	return false;
@@ -40,55 +23,46 @@ $('.search-form form').submit(function(){
 	});
 	return false;
 });
-" );
+");
 ?>
 
 <h1>Administrar Usuarios</h1>
 
-<?php
+<p>
+	También puede escribir un operador de comparación (<b>&lt;</b>, <b>&lt;=</b>,
+	<b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b> o <b>=</b>) al principio de
+	cada uno de los valores de búsqueda para especificar cómo se debe
+	hacer la comparación.
+</p>
 
-$this->widget ( 'zii.widgets.grid.CGridView', array (
-		'id' => 'usuario-grid',
-		'itemsCssClass' => 'table table-striped',
-		'pager' => array (
-				'htmlOptions' => array (
-						'class' => 'pagination' 
-				) 
-		),
-		'dataProvider' => $model->search (),
-		'filter' => $model,
-		'columns' => array (
-				array (
-						'name' => 'id',
-						'htmlOptions' => array (
-								'width' => '30' 
-						) 
-				),
-				array (
-						'name' => 'username' 
-				),
-				array (
-						'name' => 'tipousuario_id',
-						'value' => '$data->tipousuario->descripcion',
-						'header' => 'Tipo de usuario',
-						'filter' => CHtml::listData ( Tipousuario::model ()->findAll (), 'id', 'descripcion' ) 
-				),
-				array (
-						'name' => 'fechacreacion',
-						// 'type'=>'date',
-						'value' => 'date_format(new DateTime($data->fechacreacion),"d/m/Y")' 
-				),
-				array (
-						'name' => 'fechamodificacion',
-						'value' => 'date_format(new DateTime($data->fechamodificacion),"d/m/Y")' 
-				),	
+<?php echo CHtml::link('Busqueda Avanzada','#',array('class'=>'search-button')); ?>
+<div class="search-form" style="display: none">
+<?php $this->renderPartial('_search',array(
+	'model'=>$model,
+)); ?>
+</div>
+<!-- search-form -->
+
+<?php $this->widget('zii.widgets.grid.CGridView', array(
+	'id'=>'usuario-grid',
+	'itemsCssClass'=>'table table-striped', 
+	'pager'=>array('htmlOptions'=>array('class'=>'pagination')), 	
+	'dataProvider'=>$model->search(),
+	'filter'=>$model,
+	'columns'=>array(
+		'id',
+		'username',
+		'password',
+		'tipousuario_id',
+		'status',
+		'fechacreacion',
 		/*
+		'fechamodificacion',
 		'creadopor',
 		'modificadopor',
 		*/
-		array (
-						'class' => 'CButtonColumn' 
-				) 
-		) 
-) );
-?>
+		array(
+			'class'=>'CButtonColumn',
+		),
+	),
+)); ?>

@@ -9,6 +9,6 @@ $this->breadcrumbs = array (
 
 <p>
 	Nuestra empresa CGG
-	</code>
-	.
+	
+	
 </p>

@@ -6,35 +6,35 @@
 
 <div class="form">
 
-<?php
-
-$form = $this->beginWidget ( 'CActiveForm', array (
-		'id' => 'detallepedidocompra-form',
-		// Please note: When you enable ajax validation, make sure the corresponding
-		// controller action is handling ajax validation correctly.
-		// There is a call to performAjaxValidation() commented in generated controller code.
-		// See class documentation of CActiveForm for details on this.
-		'enableAjaxValidation' => false 
-) );
-?>
-
-	<p class="note">
-		Los campos marcados con <span class="required">*</span> son
-		requeridos.
-	</p>
-
-	<div class="">
-		<?php echo $form->labelEx($model,'producto_id'); ?>
-		<?php echo $form->dropDownList($model,'producto_id',$model->getMenuProducto(),array("empty"=>"Seleccione")); ?>
-		<?php echo $form->error($model,'producto_id'); ?>
-	</div>
+	<?php
+	
+	$form = $this->beginWidget ( 'CActiveForm', array (
+			'id' => 'detallepedidocompra-form',
+			// Please note: When you enable ajax validation, make sure the corresponding
+			// controller action is handling ajax validation correctly.
+			// There is a call to performAjaxValidation() commented in generated controller code.
+			// See class documentation of CActiveForm for details on this.
+			'enableAjaxValidation' => false 
+	) );
+	?>
+	
+		<p class="note">
+			Los campos marcados con <span class="required">*</span> son
+			requeridos.
+		</p>
+	
+		<div class="">
+			<?php echo $form->labelEx($model,'producto_id'); ?>
+			<?php echo $form->dropDownList($model,'producto_id',$model->getMenuProducto(),array("empty"=>"Seleccione")); ?>
+			<?php echo $form->error($model,'producto_id'); ?>
+		</div>
 </div>
-
+	
 <div class="">
 		<?php echo $form->labelEx($model,'cantidad'); ?>
 		<?php echo $form->textField($model,'cantidad'); ?>
 		<?php echo $form->error($model,'cantidad'); ?>
-	</div>
+</div>
 <?php
 /*
  * <div class="">
@@ -64,9 +64,8 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 ?>
 <div class="buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Actualizar',array('class'=>'btn btn-primary btn-large')); ?>
-	</div>
+</div>
 
 <?php $this->endWidget(); ?>
 
-</div>
 <!-- form -->

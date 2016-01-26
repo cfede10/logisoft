@@ -22,16 +22,17 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 		Los campos marcados con <span class="required">*</span> son
 		requeridos.
 	</p>
-	<tr>
-		<td>
-			<div class="">
-				<?php echo $form->labelEx($model,'descripcion'); ?>
-				<?php echo $form->textField($model,'descripcion',array('size'=>45,'maxlength'=>45)); ?>
-				<?php echo $form->error($model,'descripcion'); ?>
-			</div>
-		</td>
-	</tr>
-	
+	<table STYLE="table-layout: fixed; width=100%">
+		<tr>
+			<td>
+				<div class="">
+					<?php echo $form->labelEx($model,'descripcion'); ?>
+					<?php echo $form->textField($model,'descripcion',array('size'=>45,'maxlength'=>45)); ?>
+					<?php echo $form->error($model,'descripcion'); ?>
+				</div>
+			</td>
+		</tr>
+	</table>
 	<?php
 	/*
 	 * <div class="">
