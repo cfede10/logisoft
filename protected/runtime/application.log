@@ -41692,3 +41692,201 @@ Stack trace:
 REQUEST_URI=/logisoft_charly/index.php?r=usuario/delete&id=7
 HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
 ---
+2016/01/31 20:05:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\framework\web\CController.php:1118
+Stack trace:
+#0 C:\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#10 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=usuario/delete&id=7
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
+---
+2016/01/31 20:27:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\framework\web\CController.php:1118
+Stack trace:
+#0 C:\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/delete')
+#10 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=empleado/delete&id=2
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=empleado/admin
+---
+2016/01/31 20:35:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\framework\web\CController.php:1118
+Stack trace:
+#0 C:\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#10 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=usuario/delete&id=6
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
+---
+2016/01/31 20:38:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\framework\web\CController.php:1118
+Stack trace:
+#0 C:\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#10 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=usuario/delete&id=8
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
+---
+2016/01/31 20:43:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\framework\web\CController.php:1118
+Stack trace:
+#0 C:\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#10 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=usuario/delete&id=9
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
+---
+2016/01/31 20:46:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\framework\web\CController.php:1118
+Stack trace:
+#0 C:\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#10 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=usuario/delete&id=9
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
+---
+2016/01/31 20:46:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\framework\web\CController.php:1118
+Stack trace:
+#0 C:\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#10 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=usuario/delete&id=9
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
+---
+2016/02/01 00:10:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\framework\web\CController.php:1118
+Stack trace:
+#0 C:\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#10 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=usuario/delete&id=10
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
+---
+2016/02/01 00:14:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\framework\web\CController.php:1118
+Stack trace:
+#0 C:\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#10 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=usuario/delete&id=10
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
+---
+2016/02/01 02:34:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\framework\web\CController.php:1118
+Stack trace:
+#0 C:\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#10 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=usuario/delete&id=10
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
+---
+2016/02/01 02:34:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\framework\web\CController.php:1118
+Stack trace:
+#0 C:\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/delete')
+#10 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=usuario/delete&id=10
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
+---

@@ -484,5 +484,6 @@ $this->widget ( 'zii.widgets.CBreadcrumbs', array (
 	<script src="<?php echo Yii::app()->theme->baseUrl;?>/js/menu.js"></script>
 	<script
 		src="<?php echo Yii::app()->theme->baseUrl;?>/js/bootstrap.min.js"></script>
+	<script src="<?php echo Yii::app()->theme->baseUrl;?>/js/jquery.ba-bbq.js"></script>
 </body>
 </html>

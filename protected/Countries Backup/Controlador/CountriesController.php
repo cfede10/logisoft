@@ -116,6 +116,7 @@ class CountriesController extends Controller {
 				) ); // array("site/index")
 			}
 		}
+		
 		$this->render ( "create", array (
 				"model" => $model 
 		) ); // lo mandas a la vista, mandas la variable model y el valor es model
@@ -139,6 +140,7 @@ class CountriesController extends Controller {
 			} else
 				Yii::app ()->user->setFlash ( "error", "No se actualizó =(." ); // esto no haria falta porque cuando no guarda los campos se ponen en rojo
 		}
+		
 		$this->render ( "update", array (
 				"model" => $model 
 		) ); // renderizas la vista, QUEDAN LOS DATOS EN LA VISTA PERO NO GUARDA, ES PARA QUE EL USUARIO NO VUELVA A CARGAR
