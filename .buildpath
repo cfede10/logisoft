@@ -2,5 +2,4 @@
 <buildpath>
 	<buildpathentry external="true" kind="lib" path="C:/framework"/>
 	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
-	<buildpathentry kind="src" path=""/>
 </buildpath>
