@@ -8,7 +8,6 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Listar', 'url'=>array('index')),
 	array('label'=>'Crear', 'url'=>array('create')),
 );
 
@@ -52,9 +51,9 @@ $('.search-form form').submit(function(){
 	'columns'=>array(
 		'id',
 		'username',
-		'password',
+		//'password',
 		'tipousuario_id',
-		'status',
+		//'status',
 		'fechacreacion',
 		/*
 		'fechamodificacion',

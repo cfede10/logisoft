@@ -13,11 +13,11 @@ $(document).ready(function(){
 			menu.removeAttr('style');
 		}
 	});
-	
+	/*
 	$('.menu li').on('click', function(){
 		$(this).style.display="block";
 	})
-	
+	*/
 });
 
 $(document).ready(function(){

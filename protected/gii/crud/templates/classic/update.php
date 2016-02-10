@@ -19,11 +19,9 @@ echo "\$this->breadcrumbs=array(
 ?>
 
 $this->menu=array(
-	array('label'=>'Listar', 'url'=>array('index')),
 	array('label'=>'Crear', 'url'=>array('create')),
 	array('label'=>'Ver', 'url'=>array('view', 'id'=>$model-><?php echo $this->tableSchema->primaryKey; ?>)),
 	array('label'=>'Administrar', 'url'=>array('admin')),
-	array('label'=>'MENU', 'url'=>array('Menup/index')),
 );
 ?>
 

@@ -6,13 +6,10 @@
 
 <div class="wide form">
 
-<?php
-
-$form = $this->beginWidget ( 'CActiveForm', array (
-		'action' => Yii::app ()->createUrl ( $this->route ),
-		'method' => 'get' 
-) );
-?>
+<?php $form=$this->beginWidget('CActiveForm', array(
+	'action'=>Yii::app()->createUrl($this->route),
+	'method'=>'get',
+)); ?>
 
 	<div class="">
 		<?php echo $form->label($model,'id'); ?>
@@ -97,6 +94,11 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 	<div class="">
 		<?php echo $form->label($model,'telmovil'); ?>
 		<?php echo $form->textField($model,'telmovil',array('size'=>45,'maxlength'=>45)); ?>
+	</div>
+
+	<div class="">
+		<?php echo $form->label($model,'status'); ?>
+		<?php echo $form->textField($model,'status'); ?>
 	</div>
 
 	<div class="">

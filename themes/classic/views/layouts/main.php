@@ -106,13 +106,13 @@ $this->widget ( 'zii.widgets.CMenu', array (
 										array (
 												'label' => 'ABM Usuarios',
 												'url' => array (
-														'usuario/index' 
+														'usuario/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Tipo de Usuario',
 												'url' => array (
-														'tipousuario/index' 
+														'tipousuario/admin' 
 												) 
 										) 
 								),
@@ -129,13 +129,13 @@ $this->widget ( 'zii.widgets.CMenu', array (
 										array (
 												'label' => 'ABM Empleados',
 												'url' => array (
-														'empleado/index' 
+														'empleado/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Cargos',
 												'url' => array (
-														'cargo/index' 
+														'cargo/admin' 
 												) 
 										) 
 								),
@@ -152,19 +152,19 @@ $this->widget ( 'zii.widgets.CMenu', array (
 										array (
 												'label' => 'ABM Clientes',
 												'url' => array (
-														'cliente/index' 
+														'cliente/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Contactos',
 												'url' => array (
-														'contactocliente/index' 
+														'contactocliente/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Descuentos a Clientes',
 												'url' => array (
-														'descuento/index' 
+														'descuento/admin' 
 												) 
 										) 
 								),
@@ -181,13 +181,13 @@ $this->widget ( 'zii.widgets.CMenu', array (
 										array (
 												'label' => 'ABM Proveedores',
 												'url' => array (
-														'proveedor/index' 
+														'proveedor/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Contactos',
 												'url' => array (
-														'contactoproveedor/index' 
+														'contactoproveedor/admin' 
 												) 
 										) 
 								),
@@ -204,19 +204,19 @@ $this->widget ( 'zii.widgets.CMenu', array (
 										array (
 												'label' => 'ABM Productos',
 												'url' => array (
-														'producto/index' 
+														'producto/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Tipos de Producto',
 												'url' => array (
-														'tipoproducto/index' 
+														'tipoproducto/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM stock',
 												'url' => array (
-														'stock/index' 
+														'stock/admin' 
 												) 
 										) 
 								),
@@ -233,55 +233,55 @@ $this->widget ( 'zii.widgets.CMenu', array (
 										array (
 												'label' => 'ABM Vehiculos',
 												'url' => array (
-														'vehiculo/index' 
+														'vehiculo/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Provincias',
 												'url' => array (
-														'provincia/index' 
+														'provincia/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Localidades',
 												'url' => array (
-														'localidad/index' 
+														'localidad/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM IVAs',
 												'url' => array (
-														'iva/index' 
+														'iva/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Formas de Pago',
 												'url' => array (
-														'formadepago/index' 
+														'formadepago/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Pack de unidades',
 												'url' => array (
-														'packunidades/index' 
+														'packunidades/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Pago',
 												'url' => array (
-														'pago/index' 
+														'pago/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Situacion Impositiva',
 												'url' => array (
-														'situacionimpositiva/index' 
+														'situacionimpositiva/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Tipo de Cuentas',
 												'url' => array (
-														'tipocuenta/index' 
+														'tipocuenta/admin' 
 												) 
 										) 
 								),
@@ -298,7 +298,7 @@ $this->widget ( 'zii.widgets.CMenu', array (
 										array (
 												'label' => 'ABM Detalle Pedido de Compras',
 												'url' => array (
-														'detallepedidocompra/index' 
+														'detallepedidocompra/admin' 
 												) 
 										) 
 								),
@@ -315,19 +315,19 @@ $this->widget ( 'zii.widgets.CMenu', array (
 										array (
 												'label' => 'ABM Detalle Pedido de Ventas',
 												'url' => array (
-														'detallepedidoventa/index' 
+														'detallepedidoventa/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Facturas de Venta',
 												'url' => array (
-														'facturaventa/index' 
+														'facturaventa/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Remitos de Venta',
 												'url' => array (
-														'remitoventa/index' 
+														'remitoventa/admin' 
 												) 
 										) 
 								),
@@ -344,13 +344,13 @@ $this->widget ( 'zii.widgets.CMenu', array (
 										array (
 												'label' => 'ABM Pedido de Compra',
 												'url' => array (
-														'pedidocompra/index' 
+														'pedidocompra/admin' 
 												) 
 										),
 										array (
 												'label' => 'ABM Pedido de Venta',
 												'url' => array (
-														'pedidoventa/index' 
+														'pedidoventa/admin' 
 												) 
 										) 
 								),

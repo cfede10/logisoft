@@ -41909,3 +41909,71 @@ REQUEST_URI=/logisoft_charly/index.php?r=usuario/delete&id=10
 >>>>>>> 84f92c02410d0b835b7a524f3bc0d36d221f8311
 HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
 ---
+2016/02/08 21:21:07 [warning] [application] Error al establecer unsafe al atributo "id" de "Usuario".
+in C:\xampp\htdocs\logisoft_charly\protected\controllers\UsuarioController.php (137)
+in C:\xampp\htdocs\logisoft_charly\index.php (14)
+2016/02/09 04:50:25 [error] [exception.CException] exception 'CException' with message 'La propiedad "Usuario"."creado por" no se encuentra definida.' in C:\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\framework\db\ar\CActiveRecord.php(145): CComponent->__get('creado por')
+#1 C:\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('creado por')
+#2 C:\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Usuario), 'creado por')
+#3 C:\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(Usuario), 'creado por', Array)
+#4 C:\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(Usuario), 'creado por', Array)
+#5 C:\xampp\htdocs\logisoft_charly\protected\views\usuario\_form.php(79): CActiveForm->textField(Object(Usuario), 'creado por', Array)
+#6 C:\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\logisoft_charly\protected\views\usuario\create.php(19): CController->renderPartial('_form', Array)
+#10 C:\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\logisoft_charly\protected\controllers\UsuarioController.php(79): CController->render('create', Array)
+#15 C:\framework\web\actions\CInlineAction.php(49): UsuarioController->actionCreate()
+#16 C:\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/create')
+#26 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#28 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=usuario/create
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
+---
+2016/02/09 05:01:11 [error] [exception.CException] exception 'CException' with message 'Usuario y sus behaviors no tienen un método o closure llamado "getMenuTipodeusuarios".' in C:\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getMenuTipodeus...', Array)
+#1 C:\xampp\htdocs\logisoft_charly\protected\views\usuario\_form.php(48): CActiveRecord->__call('getMenuTipodeus...', Array)
+#2 C:\xampp\htdocs\logisoft_charly\protected\views\usuario\_form.php(48): Usuario->getMenuTipodeusuarios()
+#3 C:\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\logisoft_charly\protected\views\usuario\create.php(19): CController->renderPartial('_form', Array)
+#7 C:\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 C:\xampp\htdocs\logisoft_charly\protected\controllers\UsuarioController.php(79): CController->render('create', Array)
+#12 C:\framework\web\actions\CInlineAction.php(49): UsuarioController->actionCreate()
+#13 C:\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 C:\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\framework\web\CWebApplication.php(282): CController->run('create')
+#22 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/create')
+#23 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#25 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=usuario/create
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
+---

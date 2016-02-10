@@ -1,35 +1,17 @@
 <?php
 /* @var $this EmpleadoController */
 /* @var $model Empleado */
-$this->breadcrumbs = array (
-		'Empleados' => array (
-				'index' 
-		),
-		'Administrar' 
+
+$this->breadcrumbs=array(
+	'Empleados'=>array('index'),
+	'Administrar',
 );
 
-$this->menu = array (
-		array (
-				'label' => 'Listar',
-				'url' => array (
-						'index' 
-				) 
-		),
-		array (
-				'label' => 'Crear',
-				'url' => array (
-						'create' 
-				) 
-		),
-		array (
-				'label' => 'MENU',
-				'url' => array (
-						'Menup/index' 
-				) 
-		) 
+$this->menu=array(
+	array('label'=>'Crear', 'url'=>array('create')),
 );
 
-Yii::app ()->clientScript->registerScript ( 'search', "
+Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
 	$('.search-form').toggle();
 	return false;
@@ -40,76 +22,52 @@ $('.search-form form').submit(function(){
 	});
 	return false;
 });
-" );
+");
 ?>
 
 <h1>Administrar Empleados</h1>
 
-<?php
+<p>
+	También puede escribir un operador de comparación (<b>&lt;</b>, <b>&lt;=</b>,
+	<b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b> o <b>=</b>) al principio de
+	cada uno de los valores de búsqueda para especificar cómo se debe
+	hacer la comparación.
+</p>
 
-$this->widget ( 'zii.widgets.grid.CGridView', array (
-		'id' => 'empleado-grid',
-		'itemsCssClass' => 'table table-striped',
-		'pager' => array (
-				'htmlOptions' => array (
-						'class' => 'pagination' 
-				) 
-		),
-		'dataProvider' => $model->search (),
-		'filter' => $model,
-		'columns' => array (
-				array (
-						'name' => 'id',
-						'htmlOptions' => array (
-								'width' => '30' 
-						) 
-				),
-				array (
-						'name' => 'nombre',
-						'htmlOptions' => array (
-								'width' => '120' 
-						) 
-				),
-				array (
-						'name' => 'apellido',
-						'htmlOptions' => array (
-								'width' => '120' 
-						) 
-				),
-				// 'nrodoc',
-				array (
-						'name' => 'nrodoc',
-						'htmlOptions' => array (
-								'width' => '80' 
-						) 
-				),
-				// 'fechanacimiento',
-				// 'cuil',
-				'domicilio',
-				// 'altura',
-				array (
-						'name' => 'altura',
-						'htmlOptions' => array (
-								'width' => '50' 
-						) 
-				),
+<?php echo CHtml::link('Busqueda Avanzada','#',array('class'=>'search-button')); ?>
+<div class="search-form" style="display: none">
+<?php $this->renderPartial('_search',array(
+	'model'=>$model,
+)); ?>
+</div>
+<!-- search-form -->
+
+<?php $this->widget('zii.widgets.grid.CGridView', array(
+	'id'=>'empleado-grid',
+	'itemsCssClass'=>'table table-striped', 
+	'pager'=>array('htmlOptions'=>array('class'=>'pagination')), 	
+	'dataProvider'=>$model->search(),
+	'filter'=>$model,
+	'columns'=>array(
+		'id',
+		'nombre',
+		'apellido',
+		'tipodoc',
+		'nrodoc',
+		'fechanacimiento',
 		/*
+		'cuil',
+		'domicilio',
+		'altura',
 		'piso',
 		'depto',
-		'fechaingreso', 
+		'fechaingreso',
 		'cargo_id',
-		*/
-		array (
-						'name' => 'cargo_id',
-						'value' => '$data->cargo->descripcion',
-						// 'header'=>'Cargo',
-						'filter' => CHtml::listData ( Cargo::model ()->findAll (), 'id', 'descripcion' ) 
-				),			
-		/*
 		'legajo',
 		'mail',
 		'telfijo',
 		'telmovil',
+		'status',
 		'provincia_id',
 		'localidad_id',
 		'fechacreacion',
@@ -117,9 +75,8 @@ $this->widget ( 'zii.widgets.grid.CGridView', array (
 		'creadopor',
 		'modificadopor',
 		*/
-		array (
-						'class' => 'CButtonColumn' 
-				) 
-		) 
-) );
-?>
+		array(
+			'class'=>'CButtonColumn',
+		),
+	),
+)); ?>

@@ -18,12 +18,10 @@ echo "\$this->breadcrumbs=array(
 ?>
 
 $this->menu=array(
-	array('label'=>'Listar', 'url'=>array('index')),
 	array('label'=>'Crear', 'url'=>array('create')),
 	array('label'=>'Actualizar', 'url'=>array('update', 'id'=>$model-><?php echo $this->tableSchema->primaryKey; ?>)),
 	array('label'=>'Eliminar', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model-><?php echo $this->tableSchema->primaryKey; ?>),'confirm'=>'¿Está seguro que desea eliminar este registro?')),
 	array('label'=>'Administrar', 'url'=>array('admin')),
-	array('label'=>'MENU', 'url'=>array('Menup/index')),
 );
 ?>
 

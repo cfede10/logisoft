@@ -1,32 +1,14 @@
 <?php
 /* @var $this EmpleadoController */
 /* @var $model Empleado */
-$this->breadcrumbs = array (
-		'Empleados' => array (
-				'index' 
-		),
-		'Crear' 
+
+$this->breadcrumbs=array(
+	'Empleados'=>array('index'),
+	'Crear',
 );
 
-$this->menu = array (
-		array (
-				'label' => 'Listar',
-				'url' => array (
-						'index' 
-				) 
-		),
-		array (
-				'label' => 'Administrar',
-				'url' => array (
-						'admin' 
-				) 
-		),
-		array (
-				'label' => 'MENU',
-				'url' => array (
-						'Menup/index' 
-				) 
-		) 
+$this->menu=array(
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
