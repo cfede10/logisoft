@@ -54,7 +54,7 @@ $('.search-form form').submit(function(){
 		//'password',
 		'tipousuario_id',
 		//'status',
-		'fechacreacion',
+		//'fechacreacion',
 		/*
 		'fechamodificacion',
 		'creadopor',
