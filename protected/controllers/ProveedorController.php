@@ -41,7 +41,8 @@ class ProveedorController extends Controller {
 						'allow', // allow authenticated user to perform 'create' and 'update' actions
 						'actions' => array (
 								'create',
-								'update' 
+								'update' ,	
+								'CiudadesProvincias'
 						),
 						'users' => array (
 								'@' 
@@ -168,6 +169,14 @@ class ProveedorController extends Controller {
 		$this->render ( 'admin', array (
 				'model' => $model 
 		) );
+	}
+
+	public function actionCiudadesProvincias() {
+		$list = Localidad::model ()->findAll ( "provincia_id=?", array (
+				$_POST ["Proveedor"] ["provincia_id"]
+		) );
+		foreach ( $list as $data )
+			echo "<option value=\"{$data->id}\">{$data->nombre}</option>";
 	}
 	
 	/**

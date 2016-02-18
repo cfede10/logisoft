@@ -24,7 +24,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 	</p>
 
 	<!-- RENGLON 1 -->
-	<table STYLE="table-layout: fixed; width=100%">
+	<table STYLE="table-layout: fixed; width:100%">
 		<tr>
 			<td>
 				<div class="">
@@ -46,8 +46,10 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 		<tr>
 			<td>
 				<div class="">
-					<?php echo $form->labelEx($model,'tipodoc'); ?>
-					<?php echo $form->textField($model,'tipodoc',array('size'=>45,'maxlength'=>45)); ?>
+					<?php echo $form->labelEx($model,'Tipo de documento'); ?>
+					<?php echo CHtml::dropDownList('tipoDoc', 'DNI', 
+              			array('DNI' => 'DNI', 'LU' => 'Libreta Unica', 'PA' => 'Pasaporte'));
+					?>
 					<?php echo $form->error($model,'tipodoc'); ?>
 				</div>
 			</td>

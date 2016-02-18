@@ -213,10 +213,15 @@ class Proveedor extends CActiveRecord {
 		);
 	}
 	public function getMenuProvincias() {
+		// $provincias=Provincia::model()->findAll()
+		// return CHtml::listData($provincias,"id","nombre");
 		return CHtml::listData ( Provincia::model ()->findAll (), "id", "nombre" );
 	}
-	public function getMenuLocalidades() {
-		return CHtml::listData ( Localidad::model ()->findAll (), "id", "nombre" );
+	public function getMenuLocalidades($defultProv = 3) {
+		$Localidades = Localidad::model ()->findAll ( "provincia_id=?", array (
+				$defultProv 
+		) );
+		return CHtml::listData ( $Localidades, "id", "nombre" );
 	}
 	public function getMenuIvas() {
 		return CHtml::listData ( Iva::model ()->findAll (), "id", "descripcion", "porcentaje" );

@@ -41977,3 +41977,176 @@ Stack trace:
 REQUEST_URI=/logisoft_charly/index.php?r=usuario/create
 HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=usuario/admin
 ---
+2016/02/18 01:08:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "CiudadesProvincias" solicitada.' in C:\framework\web\CController.php:483
+Stack trace:
+#0 C:\framework\web\CController.php(270): CController->missingAction('CiudadesProvinc...')
+#1 C:\framework\web\CWebApplication.php(282): CController->run('CiudadesProvinc...')
+#2 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/Ciudad...')
+#3 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=empleado/CiudadesProvincias
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=empleado/create
+---
+2016/02/18 01:08:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "CiudadesProvincias" solicitada.' in C:\framework\web\CController.php:483
+Stack trace:
+#0 C:\framework\web\CController.php(270): CController->missingAction('CiudadesProvinc...')
+#1 C:\framework\web\CWebApplication.php(282): CController->run('CiudadesProvinc...')
+#2 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/Ciudad...')
+#3 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=empleado/CiudadesProvincias
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=empleado/create
+---
+2016/02/18 01:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "CiudadesProvincias" solicitada.' in C:\framework\web\CController.php:483
+Stack trace:
+#0 C:\framework\web\CController.php(270): CController->missingAction('CiudadesProvinc...')
+#1 C:\framework\web\CWebApplication.php(282): CController->run('CiudadesProvinc...')
+#2 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/Ciudad...')
+#3 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=empleado/CiudadesProvincias
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=empleado/create
+---
+2016/02/18 01:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "CiudadesProvincias" solicitada.' in C:\framework\web\CController.php:483
+Stack trace:
+#0 C:\framework\web\CController.php(270): CController->missingAction('CiudadesProvinc...')
+#1 C:\framework\web\CWebApplication.php(282): CController->run('CiudadesProvinc...')
+#2 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/Ciudad...')
+#3 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=empleado/CiudadesProvincias
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=empleado/create
+---
+2016/02/18 01:16:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "CiudadesProvincias" solicitada.' in C:\framework\web\CController.php:483
+Stack trace:
+#0 C:\framework\web\CController.php(270): CController->missingAction('CiudadesProvinc...')
+#1 C:\framework\web\CWebApplication.php(282): CController->run('CiudadesProvinc...')
+#2 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/Ciudad...')
+#3 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=empleado/CiudadesProvincias
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=empleado/create
+---
+2016/02/18 01:16:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "CiudadesProvincias" solicitada.' in C:\framework\web\CController.php:483
+Stack trace:
+#0 C:\framework\web\CController.php(270): CController->missingAction('CiudadesProvinc...')
+#1 C:\framework\web\CWebApplication.php(282): CController->run('CiudadesProvinc...')
+#2 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/Ciudad...')
+#3 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=empleado/CiudadesProvincias
+---
+2016/02/18 01:18:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "CiudadesProvincias" solicitada.' in C:\framework\web\CController.php:483
+Stack trace:
+#0 C:\framework\web\CController.php(270): CController->missingAction('CiudadesProvinc...')
+#1 C:\framework\web\CWebApplication.php(282): CController->run('CiudadesProvinc...')
+#2 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/Ciudad...')
+#3 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=empleado/CiudadesProvincias
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=empleado/create
+---
+2016/02/18 01:20:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "CiudadesProvincias" solicitada.' in C:\framework\web\CController.php:483
+Stack trace:
+#0 C:\framework\web\CController.php(270): CController->missingAction('CiudadesProvinc...')
+#1 C:\framework\web\CWebApplication.php(282): CController->run('CiudadesProvinc...')
+#2 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/Ciudad...')
+#3 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=empleado/CiudadesProvincias
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=empleado/create
+---
+2016/02/18 01:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "CiudadesProvincias" solicitada.' in C:\framework\web\CController.php:483
+Stack trace:
+#0 C:\framework\web\CController.php(270): CController->missingAction('CiudadesProvinc...')
+#1 C:\framework\web\CWebApplication.php(282): CController->run('CiudadesProvinc...')
+#2 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/Ciudad...')
+#3 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=empleado/CiudadesProvincias
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=empleado/create
+---
+2016/02/18 01:28:00 [error] [php] Undefined index: Cliente (C:\xampp\htdocs\logisoft_charly\protected\controllers\EmpleadoController.php:163)
+Stack trace:
+#0 C:\framework\web\filters\CFilterChain.php(133): EmpleadoController->runAction()
+#1 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\framework\web\filters\CInlineFilter.php(58): EmpleadoController->filterAccessControl()
+#4 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\framework\web\CController.php(265): EmpleadoController->runActionWithFilters()
+#7 C:\framework\web\CWebApplication.php(282): EmpleadoController->run()
+#8 C:\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\logisoft_charly\index.php(14): CWebApplication->run()
+REQUEST_URI=/logisoft_charly/index.php?r=empleado/CiudadesProvincias
+in C:\xampp\htdocs\logisoft_charly\protected\controllers\EmpleadoController.php (163)
+in C:\xampp\htdocs\logisoft_charly\index.php (14)
+2016/02/18 01:29:47 [error] [php] Undefined index: Cliente (C:\xampp\htdocs\logisoft_charly\protected\controllers\EmpleadoController.php:148)
+Stack trace:
+#0 C:\framework\web\filters\CFilterChain.php(133): EmpleadoController->runAction()
+#1 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\framework\web\filters\CInlineFilter.php(58): EmpleadoController->filterAccessControl()
+#4 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\framework\web\CController.php(265): EmpleadoController->runActionWithFilters()
+#7 C:\framework\web\CWebApplication.php(282): EmpleadoController->run()
+#8 C:\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\logisoft_charly\index.php(14): CWebApplication->run()
+REQUEST_URI=/logisoft_charly/index.php?r=empleado/CiudadesProvincias
+in C:\xampp\htdocs\logisoft_charly\protected\controllers\EmpleadoController.php (148)
+in C:\xampp\htdocs\logisoft_charly\index.php (14)
+2016/02/18 05:07:31 [error] [php] Undefined variable: select (C:\xampp\htdocs\logisoft_charly\protected\views\empleado\_form.php:43)
+Stack trace:
+#0 C:\framework\web\CController.php(869): EmpleadoController->renderFile()
+#1 C:\xampp\htdocs\logisoft_charly\protected\views\empleado\create.php(17): EmpleadoController->renderPartial()
+#2 C:\framework\web\CBaseController.php(126): require()
+#3 C:\framework\web\CBaseController.php(95): EmpleadoController->renderInternal()
+#4 C:\framework\web\CController.php(869): EmpleadoController->renderFile()
+#5 C:\framework\web\CController.php(782): EmpleadoController->renderPartial()
+#6 C:\xampp\htdocs\logisoft_charly\protected\controllers\EmpleadoController.php(79): EmpleadoController->render()
+#7 C:\framework\web\actions\CInlineAction.php(49): EmpleadoController->actionCreate()
+#8 C:\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\framework\web\filters\CFilterChain.php(133): EmpleadoController->runAction()
+#10 C:\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\framework\web\filters\CInlineFilter.php(58): EmpleadoController->filterAccessControl()
+#13 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\framework\web\CController.php(265): EmpleadoController->runActionWithFilters()
+#16 C:\framework\web\CWebApplication.php(282): EmpleadoController->run()
+#17 C:\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\logisoft_charly\index.php(14): CWebApplication->run()
+REQUEST_URI=/logisoft_charly/index.php?r=empleado/create
+in C:\xampp\htdocs\logisoft_charly\protected\views\empleado\_form.php (43)
+in C:\xampp\htdocs\logisoft_charly\protected\views\empleado\create.php (17)
+in C:\xampp\htdocs\logisoft_charly\protected\controllers\EmpleadoController.php (79)
+2016/02/18 05:38:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\framework\web\CWebApplication.php(282): CController->run('CiudadesProvinc...')
+#8 C:\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/Ciuda...')
+#9 C:\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\logisoft_charly\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/logisoft_charly/index.php?r=proveedor/CiudadesProvincias
+HTTP_REFERER=http://localhost/logisoft_charly/index.php?r=proveedor/create
+---

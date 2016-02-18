@@ -22,7 +22,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 		Los campos marcados con <span class="required">*</span> son
 		requeridos.
 	</p>
-	<table STYLE="table-layout: fixed; width=100%">
+	<table STYLE="table-layout: fixed; width>100%">
 		<tr>
 			<td>
 				<div class="">

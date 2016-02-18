@@ -23,7 +23,7 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 		requeridos.
 	</p>
 
-	<table STYLE="table-layout: fixed; width=100%">
+	<table STYLE="table-layout: fixed; width:100%">
 		<!-- RENGLON 1 -->
 		<tr>
 			<td>
@@ -63,17 +63,26 @@ $form = $this->beginWidget ( 'CActiveForm', array (
 		<!-- RENGLON 3 -->
 		<tr>
 			<td>
-				<div class="">
-					<?php echo $form->labelEx($model,'provincia_id'); ?>
-					<?php echo $form->dropDownList($model,'provincia_id',$model->getMenuProvincias(),array("empty"=>"Seleccione")); ?>
+				<div class="">		
+					<?php
+					$htmlOptions = array (
+							"ajax" => array (
+									"url" => $this->createUrl ( "CiudadesProvincias" ),
+									"type" => "POST",
+									"update" => "#Proveedor_localidad_id" 
+							) 
+					);
+					?>
+					<?php echo $form->labelEx($model,'provincia'); ?>
+					<?php echo $form->dropDownList($model,'provincia_id',$model->getMenuProvincias(),$htmlOptions); ?>
 					<?php echo $form->error($model,'provincia_id'); ?>
 				</div>
 			</td>
 
 			<td>
-				<div class="">
-					<?php echo $form->labelEx($model,'localidad_id'); ?>
-					<?php echo $form->dropDownList($model,'localidad_id',$model->getMenuLocalidades(),array("empty"=>"Seleccione")); ?>
+				<div class="">			
+					<?php echo $form->labelEx($model,'localidad'); ?>
+					<?php echo $form->dropDownList($model,'localidad_id',$model->getMenuLocalidades()); ?>
 					<?php echo $form->error($model,'localidad_id'); ?>
 				</div>
 			</td>

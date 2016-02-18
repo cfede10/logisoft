@@ -10,21 +10,9 @@ $this->breadcrumbs = array (
 
 $this->menu = array (
 		array (
-				'label' => 'Listar',
-				'url' => array (
-						'index' 
-				) 
-		),
-		array (
 				'label' => 'Administrar',
 				'url' => array (
 						'admin' 
-				) 
-		),
-		array (
-				'label' => 'MENU',
-				'url' => array (
-						'Menup/index' 
 				) 
 		) 
 );

@@ -32,7 +32,7 @@ class EmpleadoController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update',	'CiudadesProvincias'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -141,6 +141,14 @@ class EmpleadoController extends Controller
 		$this->render('admin',array(
 			'model'=>$model,
 		));
+	}
+	
+	public function actionCiudadesProvincias() {
+		$list = Localidad::model ()->findAll ( "provincia_id=?", array (
+				$_POST ["Empleado"] ["provincia_id"]
+		) );
+		foreach ( $list as $data )
+			echo "<option value=\"{$data->id}\">{$data->nombre}</option>";
 	}
 
 	/**
